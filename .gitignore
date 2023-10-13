@@ -1,0 +1,3 @@
+frontend/node_modules
+backend/backend/__pycache__
+backend/verify_3D_api/__pycache__
