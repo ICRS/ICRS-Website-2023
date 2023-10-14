@@ -18,7 +18,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Show Working Directory
+      run: |
+        echo "Current working directory is:"
+        pwd
     - run: cd frontend
+    - name: Show Working Directory
+      run: |
+        echo "Current working directory is:"
+        pwd
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
