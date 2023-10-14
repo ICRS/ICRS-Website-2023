@@ -1,0 +1,25 @@
+name: Build New Branch
+
+on:
+  push:
+    branches:
+      - main # Adjust this branch to the branch you want to trigger the action on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create and switch to a new branch
+        run: |
+          git checkout -b prev
+          git config user.email "jack.crane@ukseds.org"
+          git config user.name "JakCrane"
+          git add frontend/
+          git commit -m "Committing files from the main directory"
+          git push origin prev
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
