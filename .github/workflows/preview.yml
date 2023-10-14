@@ -22,11 +22,13 @@ jobs:
       run: |
         echo "Current working directory is:"
         pwd
+        ls
     - run: cd frontend
     - name: Show Working Directory
       run: |
         echo "Current working directory is:"
         pwd
+        ls
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
