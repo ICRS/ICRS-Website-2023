@@ -12,7 +12,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+      - name: Delete the existing "prev" branch
+        run: |
+          git push --delete origin prev
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: Create and switch to a new branch
         run: |
           git checkout -b prev
