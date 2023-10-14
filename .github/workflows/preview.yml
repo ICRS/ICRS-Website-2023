@@ -23,6 +23,8 @@ jobs:
         echo "Current working directory is:"
         pwd
         ls
+        cd frontend
+        ls
     - run: cd frontend
     - name: Show Working Directory
       run: |
