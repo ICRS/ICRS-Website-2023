@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@mui/styles';
 
 const images = [
-  'images/image1.jpeg',
-  'images/image2.jpeg',
-  'images/image3.jpeg',
+  'images/SlideShowImg1.JPG',
+  'images/SlideShowImg2.JPG',
+  'images/SlideShowImg3.JPG',
 ];
 
 const useStyles = makeStyles((theme) => ({
