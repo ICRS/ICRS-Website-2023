@@ -50,7 +50,7 @@ const NavBar = () => {
     >
       <Grid container spacing={0} sx={{padding:0, height:'60px'}}>
         <Grid item xs={2} sx={{display:'flex',margin:'auto',}}>
-          <img src='/images/logo.png' alt='icrs-logo' style={{width:'32px',height:'32px',margin:'auto'}} />
+          <img src='./images/logo.png' alt='icrs-logo' style={{width:'32px',height:'32px',margin:'auto'}} />
         </Grid>
         <Grid item xs={3} margin={'auto'}>
           <Typography variant="h6" color="black" sx={{flexGrow:1}} align='center' marginX={1}>
