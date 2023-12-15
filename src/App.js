@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/ICRS-Website-2023" element={<Layout />}>
+        <Route path="" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="events" element={<Events />} />
 

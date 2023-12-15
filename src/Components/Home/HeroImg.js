@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@mui/styles';
 
-const images = [
-  'images/SlideShowImg1.JPG',
-  'images/SlideShowImg2.JPG',
-  'images/SlideShowImg3.JPG',
-];
+const imagePath = process.env.NODE_ENV === 'production'
+  ? process.env.REACT_APP_PROD_IMAGE_PATH
+  : process.env.REACT_APP_DEV_IMAGE_PATH;
 
+console.log(imagePath)
+const images = [
+  `${imagePath}SlideShowImg1.JPG`,
+  `${imagePath}SlideShowImg2.JPG`,
+  `${imagePath}SlideShowImg3.JPG`,
+];
+console.log(images[0])
 const useStyles = makeStyles((theme) => ({
   heroContainer: {
     position: 'relative',
