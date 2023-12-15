@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@mui/styles';
 
 const imagePath = process.env.NODE_ENV === 'production'
-  ? process.env.REACT_APP_PROD_IMAGE_PATH
-  : process.env.REACT_APP_DEV_IMAGE_PATH;
+  ? '/ICRS-Website-2023/images/'
+  : './images/'
 
 console.log(imagePath)
 const images = [
@@ -48,7 +48,7 @@ const HeroImage = () => {
         <img
           key={index}
           src={image}
-          alt={`Image ${index + 1}`}
+          alt={`${index + 1}`}
           className={classes.heroImage}
           style={{ opacity: index === currentImage ? 1 : 0 }}
         />

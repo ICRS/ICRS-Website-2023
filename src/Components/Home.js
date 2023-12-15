@@ -8,7 +8,7 @@ import Sponsors from "./Home/Sponsors";
 import breakpoints from "./ReusableComponents/breakpoints";
 import NavBarMob from './ReusableComponents/NavBarMob'
 import NavBar from "./ReusableComponents/NavBar";
-
+import Grid from '@mui/material/Grid';
 function Home() {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -25,16 +25,17 @@ function Home() {
     }
   }, []);
 
-
-  if (window.innerWidth <= breakpoints.md) {
-    var navbar = <NavBarMob/>
+  var navbar = null;
+  if (windowWidth <= breakpoints.md) {
+    navbar = <NavBarMob/>
   } else {
-    var navbar = <NavBar/>
+    navbar = <NavBar/>
   }
   return (
     <div className="Home" sx={{margin:0}} >
 
       {navbar}
+      <Grid sx={{height: "60px"}}></Grid>
       <HeroImg/>
       <Intro />
       <WhatWeDo />

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ListItemButton, ListItemText, Paper, Typography } from '@mui/material';
+import { ListItemButton, Paper, Typography } from '@mui/material';
 
 
 const LinkWithOverlay = ({src, description, key, title}) => {

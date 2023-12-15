@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import React, { useState, useEffect} from "react";
 import breakpoints from "./ReusableComponents/breakpoints";
 import NavBarMob from './ReusableComponents/NavBarMob'
@@ -20,11 +20,11 @@ const Layout = () => {
     }
   }, []);
 
-
-  if (window.innerWidth <= breakpoints.md) {
-    var navbar = <NavBarMob/>
+  var navbar = null;
+  if (windowWidth <= breakpoints.md) {
+    navbar = <NavBarMob/>
   } else {
-    var navbar = <NavBar/>
+    navbar = <NavBar/>
   }
   return (
     <>
