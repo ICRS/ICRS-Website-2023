@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Typography, Box, Grid } from '@mui/material';
+import { Paper, Typography, Grid } from '@mui/material';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import BuildIcon from '@mui/icons-material/Build';
 import FactoryIcon from '@mui/icons-material/Factory';

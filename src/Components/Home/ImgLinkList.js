@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { List, Paper, Grid } from '@mui/material';
+import React from 'react';
+import { Paper, Grid } from '@mui/material';
 import LinkWithOverlay from '../ReusableComponents/LinkWithOverlay'
 
 const ImgLinkList = () => {

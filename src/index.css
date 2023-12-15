@@ -1,3 +1,7 @@
 body {
     margin: 0;
 }
+.active > div > span  {
+    text-decoration: underline;
+    font-weight: bold;
+}

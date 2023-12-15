@@ -43,7 +43,7 @@ const NavBarMob = () => {
     >
       <Grid container spacing={0} sx={{width:'100%',padding:0, height:'60px',}}>
         <Grid item xs={2} margin={'auto'}>
-          <img src='/images/logo.png' alt='icrs-logo' style={{width:'32px',height:'32px'}} />
+          <img src='./images/logo.png' alt='icrs-logo' style={{width:'32px',height:'32px'}} />
         </Grid>
         <Grid item xs={8} margin={'auto'}>
           <Typography variant="h6" color="black" sx={{flexGrow:1}} align='center' marginX={1}>

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://JakCrane.github.io/ICRS-Website-2023",
+  "homepage": "https://jakcrane.github.io/",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -13,10 +13,13 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.21.1",
+    "dotenv": "^16.3.1",
     "gh-pages": "^6.0.0",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-cookies": "^0.1.1",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -26,7 +29,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "clean": "gh-pages-clean"
   },
   "eslintConfig": {
     "extends": [

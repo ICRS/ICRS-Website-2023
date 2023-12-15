@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@mui/styles';
 
-const images = [
-  'images/SlideShowImg1.JPG',
-  'images/SlideShowImg2.JPG',
-  'images/SlideShowImg3.JPG',
-];
+const imagePath = process.env.NODE_ENV === 'production'
+  ? '/ICRS-Website-2023/images/'
+  : './images/'
 
+console.log(imagePath)
+const images = [
+  `${imagePath}SlideShowImg1.JPG`,
+  `${imagePath}SlideShowImg2.JPG`,
+  `${imagePath}SlideShowImg3.JPG`,
+];
+console.log(images[0])
 const useStyles = makeStyles((theme) => ({
   heroContainer: {
     position: 'relative',
@@ -43,7 +48,7 @@ const HeroImage = () => {
         <img
           key={index}
           src={image}
-          alt={`Image ${index + 1}`}
+          alt={`${index + 1}`}
           className={classes.heroImage}
           style={{ opacity: index === currentImage ? 1 : 0 }}
         />

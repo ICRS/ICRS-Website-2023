@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 const Sponsors = () => {
   let images = [
     {src: 'images/sponsor1.png'},
@@ -16,7 +16,7 @@ const Sponsors = () => {
         <Grid container sx={{padding:0}}>
           {images.map((image, index) => (
             <Grid key={index} xs={12} md={4} padding={1} sx={{display:'flex',alignItem:'center'}}>
-              <img src={image.src}  width='100%' />
+              <img src={image.src}  width='100%' alt='' />
             </Grid>
             
           ))}

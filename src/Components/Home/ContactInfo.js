@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Typography, Icon, Box } from '@mui/material';
+import { Paper, Typography, Box } from '@mui/material';
 import JoinButton from './JoinButton';
 
 const ContactInfoBox = () => {
