@@ -3,7 +3,7 @@ import React, { useState, useEffect} from "react";
 import breakpoints from "./ReusableComponents/breakpoints";
 import NavBarMob from './ReusableComponents/NavBarMob'
 import NavBar from "./ReusableComponents/NavBar";
-
+import Grid from '@mui/material/Grid';
 const Layout = () => {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -29,6 +29,7 @@ const Layout = () => {
   return (
     <>
       {navbar}
+      <Grid sx={{height: "60px"}}></Grid>
       <Outlet />
       {/* <Footer></Footer> */}
     </>
