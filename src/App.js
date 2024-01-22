@@ -1,50 +1,23 @@
-import React, { useState, useEffect} from "react";
-// import axios from "axios"
-// import GetCheckerForm from "./GetCheckerForm";
-// import PostCheckerForm from "./PostCheckerForm";
-import NavBar from "./ReusableComponents/NavBar";
-import HeroImg from "./landingPageContent/HeroImg";
-import ContactInfoBox from "./landingPageContent/ContactInfo";
-import Intro from "./landingPageContent/Intro";
-import WhatWeDo from "./landingPageContent/WhatWeDo";
-import ImgLinkList from "./landingPageContent/ImgLinkList";
-import Sponsors from "./landingPageContent/Sponsors";
-import breakpoints from "./ReusableComponents/breakpoints";
-import NavBarMob from './ReusableComponents/NavBarMob'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import React from "react";
+import Home from './Components/Home'
+import Layout from './Components/Layout'
+import Events from './Components/Events'
 function App() {
+  const routerPath = (process.env.NODE_ENV === 'production')
+    ? 'ICRS-Website-2023/' : ''
 
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-  }, []);
-
-
-  if (window.innerWidth <= breakpoints.md) {
-    var navbar = <NavBarMob/>
-  } else {
-    var navbar = <NavBar/>
-  }
+  console.log(routerPath + 'router path ')
   return (
-    <div className="App" sx={{margin:0}} >
+    <BrowserRouter>
+      <Routes>
+        <Route path={routerPath} element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="events" element={<Events />} />
 
-      {navbar}
-      <HeroImg/>
-      <Intro />
-      <WhatWeDo />
-      <ImgLinkList />
-      <ContactInfoBox/>
-      <Sponsors />
-    </div>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
