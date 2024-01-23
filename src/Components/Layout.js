@@ -4,6 +4,7 @@ import breakpoints from "./ReusableComponents/breakpoints";
 import NavBarMob from './ReusableComponents/NavBarMob'
 import NavBar from "./ReusableComponents/NavBar";
 import Grid from '@mui/material/Grid';
+import Footer from "./ReusableComponents/Footer";
 const Layout = () => {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -31,7 +32,7 @@ const Layout = () => {
       {navbar}
       <Grid sx={{height: "60px"}}></Grid>
       <Outlet />
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </>
   )
 };

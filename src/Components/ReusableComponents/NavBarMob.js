@@ -1,8 +1,18 @@
 import React, { useState, useEffect, useMediaQuery } from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Grid } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Grid, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import breakpoints from './breakpoints'
+import { NavLink } from 'react-router-dom';
 const NavBarMob = () => {
+  const links = [
+    {text: 'Home', link: '/'},
+    {text: 'Projects', link: '/projects'},
+    {text: 'Facilities', link: '/facilities'},
+    {text: '101', link: '/101'},
+    {text: 'Sponsorship', link: '/sponsorship'},
+    {text: 'Events', link: '/events'},
+  ]
+  
   const [scrolling, setScrolling] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   
@@ -65,12 +75,12 @@ const NavBarMob = () => {
             open={Boolean(anchorEl)}
             onClose={handleClose}
           >
-            <MenuItem onClick={handleClose}>Events</MenuItem>
-            <MenuItem onClick={handleClose}>Projects</MenuItem>
-            <MenuItem onClick={handleClose}>Facilities</MenuItem>
-            <MenuItem onClick={handleClose}>101</MenuItem>
-            <MenuItem onClick={handleClose}>Wiki</MenuItem>
-            <MenuItem onClick={handleClose}>Sponsorship</MenuItem>
+            {links.map((linkItem, index) => (
+              <MenuItem key={index} component={NavLink} to={linkItem.link} onClick={handleClose}>
+                <ListItemText sx={{color:'black',padding:'5px'}} align='center'>{linkItem.text}</ListItemText>
+              </MenuItem>
+            ))
+            }
           </Menu>
         </Grid>
         
