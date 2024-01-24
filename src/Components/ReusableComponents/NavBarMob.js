@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useMediaQuery } from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Grid, ListItemText } from '@mui/material';
+import React, { useState } from 'react';
+import { AppBar, Typography, IconButton, Menu, MenuItem, Grid, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import breakpoints from './breakpoints'
 import { NavLink } from 'react-router-dom';
 const NavBarMob = () => {
   const links = [
@@ -13,24 +12,7 @@ const NavBarMob = () => {
     {text: 'Events', link: '/events'},
   ]
   
-  const [scrolling, setScrolling] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);

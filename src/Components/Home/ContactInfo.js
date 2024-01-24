@@ -26,7 +26,7 @@ const ContactInfoBox = () => {
         But you can also find us on our email: contact@icrs.io
       </Typography>
       <Box sx={{width:'100%', margin:'auto', justifyContent:'center', display:'flex'}}>
-        <img src={`${imagePath}/map.jpg`} style={{width: '100%', maxWidth: '400px', height: '100%', marginBottom:'20px'}}></img>
+        <img src={`${imagePath}/map.jpg`} style={{width: '100%', maxWidth: '400px', height: '100%', marginBottom:'20px'}} alt='map of campus leading to 505'></img>
       </Box>
       <JoinButton></JoinButton>
     </Paper>
