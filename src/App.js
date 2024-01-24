@@ -1,10 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import React from "react";
-import Home from './Components/Home'
-import Layout from './Components/Layout'
-import Events from './Components/Events'
-import Projects from './Components/Projects'
-import Facilities from './Components/Facilities'
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import Home from './Components/Home'
+// import Layout from './Components/Layout'
+// import Events from './Components/Events'
+// import Projects from './Components/Projects'
+// import Facilities from './Components/Facilities'
 function App() {
 return (<p>react app</p>)
 }
