@@ -45,14 +45,13 @@ const NavBarMob = () => {
     <AppBar
       position="fixed"
       style={{
-        backgroundColor: scrolling ? '#fff' : 'rgba(255, 255, 255, 0.7)',
-        transition: 'background-color 0.3s ease',
+        backgroundColor: '#fff',
         boxShadow: 'none',
         width:'100%',
       }}
     >
       <Grid container spacing={0} sx={{width:'100%',padding:0, height:'60px',}}>
-        <Grid item xs={2} margin={'auto'}>
+        <Grid item xs={1} margin={'auto'}>
           <img src='./images/logo.png' alt='icrs-logo' style={{width:'32px',height:'32px'}} />
         </Grid>
         <Grid item xs={8} margin={'auto'}>
@@ -66,7 +65,8 @@ const NavBarMob = () => {
             color="inherit"
             aria-label="menu"
             onClick={handleClick}
-            sx={{borderRadius:'10%',backgroundColor:'gray',margin:'1px'}}
+            sx={{borderRadius:'10%',backgroundColor:'#0084FF',margin:'1px', '&:hover':{backgroundColor:'#005CB3'}}}
+            
           >
             <MenuIcon />
           </IconButton>

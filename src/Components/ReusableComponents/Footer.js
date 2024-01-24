@@ -6,7 +6,7 @@ import { faDiscord, faFacebook, faInstagram, faXTwitter } from '@fortawesome/fre
 const Footer = () => {
     return (
         <footer>
-            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems:'center', height: '100px' }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems:'center', height: '100px', backgroundColor:'lightgray' }}>
                 <Grid container justifyContent="space-around">
                     <Grid item  size="3x">
                         <Link href="https://discord.com" target="_blank" rel="noopener noreferrer">

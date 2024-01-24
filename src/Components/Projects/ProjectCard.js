@@ -5,22 +5,23 @@ const ProjectCard = ({props}) => {
     console.log(props)
     return (
         <Grid container
-            style={{ backgroundColor: '#0084FF', borderRadius: '10px'  }}
+            style={{ backgroundColor: '#0084FF', borderRadius: '10px', marginBottom: '5%' }}
         >
-            <Grid item xs={3} sx={{
+            <Grid item md={3} xs={6}
+            sx={{
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 padding: '10px',
-                height:'100%',
+                height:'auto',
+                width:'100%',
+                
             }}>
-                <img src={props.imageURL} alt={props.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <img src={props.imageURL} alt={props.name} style={{ width:'100%', height:'100%', objectFit: 'fill', overflow:'hidden',  borderRadius: '5px 0px 0px 5px',}} />
             </Grid>
-            <Grid item xs={9}>
-                <div>
-                    <h3>{props.name} - {props.leader}</h3>
-                    <p>{props.description}</p>
-                </div>
+            <Grid item xs={6} md={9}>
+                    <h3 style={{color:'white'}}>{props.name} - {props.leader}</h3>
+                    <p style={{color:'white'}}>{props.description}</p>
             </Grid>
             
         </Grid>
