@@ -6,10 +6,11 @@ import Events from './Components/Events'
 import Projects from './Components/Projects'
 import Facilities from './Components/Facilities'
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={''} element={<Layout />}>
+        <Route path={'ICRS-Webiste-2023/'} element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="events" element={<Events />} />
           <Route path="projects" element={<Projects />} />
