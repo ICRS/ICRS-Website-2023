@@ -7,12 +7,10 @@ function Projects() {
   var projectList = [
     {name: 'Line follower', leader:'ICRS', description: 'Build a line following robot in a team and compete in the winter! You will be judged on track completion, speed and cool factor, Open to beginners and especially encouraged for people that finished 101. 🙂', imageURL: 'images/image1.jpeg'},
     {name: 'Eurobot', leader:'Hoatian', description: 'Compete in Eurobot - making an autonomous robot that accomplishes many challenging tasks! Do well and get the ICRS name out into the competition!', imageURL: 'images/image1.jpeg'},
-    {name: 'SSL', leader:'Hoatian', description: 'robotics 101', imageURL: 'images/image1.jpeg'},
+    {name: 'RoboCup', leader:'Martin, Ben', description: 'robotics 101', imageURL: 'images/image1.jpeg'},
     {name: 'Cubesolver', leader:'Hoatian', description: 'robotics 101', imageURL: 'images/image1.jpeg'},
-    {name: 'Minion', leader:'Hoatian', description: 'robotics 101', imageURL: 'images/image1.jpeg'},
     {name: 'MERC', leader:'Hoatian', description: 'robotics 101', imageURL: 'images/image1.jpeg'},
-    {name: 'CPR', leader:'Hoatian', description: 'robotics 101', imageURL: 'images/image1.jpeg'},
-    {name: 'BattleBots', leader:'Hoatian', description: 'robotics 101', imageURL: 'images/image1.jpeg'},
+    {name: 'BattleBots', leader:'Etienne', description: 'robotics 101', imageURL: 'images/image1.jpeg'},
   ]
   return (
     <div className="Projects" sx={{ margin:0 }} >
