@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ICRS-Website-2023/static/css/main.e8f679fe.css",
-    "main.js": "/ICRS-Website-2023/static/js/main.198ad727.js",
+    "main.js": "/ICRS-Website-2023/static/js/main.14dbd643.js",
     "index.html": "/ICRS-Website-2023/index.html",
     "main.e8f679fe.css.map": "/ICRS-Website-2023/static/css/main.e8f679fe.css.map",
-    "main.198ad727.js.map": "/ICRS-Website-2023/static/js/main.198ad727.js.map"
+    "main.14dbd643.js.map": "/ICRS-Website-2023/static/js/main.14dbd643.js.map"
   },
   "entrypoints": [
     "static/css/main.e8f679fe.css",
-    "static/js/main.198ad727.js"
+    "static/js/main.14dbd643.js"
   ]
 }
