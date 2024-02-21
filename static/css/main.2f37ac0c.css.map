@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.2f37ac0c.css","mappings":"AAAA,KACI,QACJ,CACA,iBAEI,eAAiB,CADjB,yBAEJ","sources":["index.css"],"sourcesContent":["body {\n    margin: 0;\n}\n.active > div > span  {\n    text-decoration: underline;\n    font-weight: bold;\n}"],"names":[],"sourceRoot":""}
