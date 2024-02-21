@@ -7,13 +7,11 @@ import Projects from './Components/Projects'
 import Facilities from './Components/Facilities'
 import OneOone from './Components/OneOone'
 function App() {
-    const urlPath = process.env.NODE_ENV === 'production'
-        ? '/ICRS-Website-2023'
-        : ''
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={urlPath} element={<Layout />}>
+        <Route path="ICRSWEB/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="events" element={<Events />} />
           <Route path="projects" element={<Projects />} />
